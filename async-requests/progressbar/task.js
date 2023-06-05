@@ -1,10 +1,11 @@
-let form = document.getElementById('form')
+let form = document.getElementById('form');
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let xhr = new XMLHttpRequest();
     
     const progress = document.getElementById( 'progress' );
-    const formData = new FormData(form)
+    const formData = new FormData(form);
 
     xhr.upload.onprogress = function(e) {
         if (e.lengthComputable)
@@ -13,4 +14,4 @@ form.addEventListener('submit', (e) => {
     
     xhr.open('POST', form.action, true);
     xhr.send(formData);
-})
+});

@@ -18,16 +18,22 @@
 
 ```html
 <div class="poll">
-    <div class="poll__title" id="poll__title">
+    <div class="poll__title" id="poll__">
         <!--   Как вы относитесь к собакам? -->
     </div>
     <div class="poll__answers poll__answers_active" id="poll__answers">
         <!-- <button class="poll__answer">
           Хорошо
         </button>
+
         <button class="poll__answer">
           Отлично
         </button>
+
+        <button class="poll__answer">
+          Отлично
+        </button>
+
         <button class="poll__answer">
           Я люблю собак
         </button>
